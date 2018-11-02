@@ -13,6 +13,13 @@ app = Flask(__name__)
 def homepage():
     return render_template('index.html')
 
+@app.route("/01")
+def index01():
+    return render_template('01.html')
+
+@app.route("/02")
+def index02():
+    return render_template('02.html')
 
 #-------------------------------------------------------------
 # standard boilerplate

@@ -1,0 +1,26 @@
+
+.four.columns {
+background-color: #aaa;
+}
+
+/*----------------------------------------------*/
+.t-global__host {
+background-color: #eee;
+}
+
+.t-global__host * {
+box-sizing: border-box;
+}
+
+.t-global__host li {
+list-style-type: none;
+}
+
+/*----------------------------------------------*/
+.t-global__button {
+  cursor: pointer;
+}
+
+.t-global__button_postback {
+  width: 100%;
+}
