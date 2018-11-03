@@ -42,7 +42,6 @@
   border: 2px solid #fe1100;
   box-shadow: none;
 }
-*/
 
 .t-inputForm__wrapper {
   display: flex;
@@ -160,6 +159,8 @@
   margin: 0 .05em 0 .1em;
   vertical-align: -0.1em;
 }
+*/
+
 
 /* Chat Added
 --------------------------------------------- */
@@ -183,12 +184,12 @@
   border-radius: 0;
 }
 
-
+/*
 [data-role="chat-submit"] {
   font-family: arial, helvetica, Segoe UI Symbol;
   color: #fff;
 }
-
+*/
 
 
 
