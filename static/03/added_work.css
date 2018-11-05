@@ -40,8 +40,20 @@ padding-inline-start: 0;
 padding-top: 120%;
 }
 
+/* Buttons ------------------------------------------*/
+.t-global__button {
+cursor: pointer;
+}
 
+.t-global__button_postback {
+width: 100%;
+}
 
+/* Button submit icon */
+[data-role="chat-submit"] {
+font-family: arial, helvetica, Segoe UI Symbol;
+color: #000;
+}
 
 
 /* Messages ---------------------------------------*/
@@ -49,7 +61,6 @@ padding-top: 120%;
 .t-messageList__wrapper {
 position: relative;
 background-color: #eee;
-margin: 0 0 20px 0;
 }
 
 .t-messageList__wrapper::before {
@@ -143,59 +154,8 @@ display: flex;
 
 .t-inputForm__input {
 flex-grow: 1;
-width: 100%;
-padding: 5px 0 5px 10px;
-margin: 0 10px 0 10px;
+padding-left: 20px;
 }
-
-/* Bottom Fields */
-input:focus {
-outline: none;
-}
-
-input {
-border: none;
-}
-
-/* Bottom Buttons */
-button {
-display: inline-block;
-text-align: center;
-text-decoration: none;
-white-space: nowrap;
-cursor: pointer;
-box-sizing: border-box;
-border-radius: 8px;
-border: none;
-color: #fff;
-background-color: #000;
-}
-
-button:hover,
-button:focus {
-outline: 0;
-}
-
-/* Button erease */
-.t-topBar__button {
-padding: 5px 10px 7px 10px;
-}
-/* Button erease icon */
-[data-role="chat-erase"] {
-font-family: arial, helvetica, Segoe UI Symbol;
-}
-
-/* Button submit */
-.t-global__button {
-cursor: pointer;
-padding: 6px 30px 4px 30px;
-}
-/* Button submit icon */
-[data-role="chat-submit"] {
-font-family: arial, helvetica, Segoe UI Symbol;
-}
-
-
 
 
 /* Media Queries ------------------------------------*/
