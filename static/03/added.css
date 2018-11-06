@@ -63,7 +63,7 @@ top: 0;
 right: 0;
 bottom: 0;
 left: 0;
-margin: 0;
+margin: 10px 0 0 0;
 }
 
 .t-messageList__message_user {
@@ -144,20 +144,23 @@ display: flex;
 .t-inputForm__input {
 flex-grow: 1;
 width: 100%;
-padding: 5px 0 5px 10px;
+padding: 5px 0 5px 15px;
 margin: 0 10px 0 10px;
 }
 
-/* Bottom Fields */
+/* Bottom form */
 input:focus {
 outline: none;
 }
 
 input {
 border: none;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
 }
 
-/* Bottom Buttons */
+/* Bottom buttons */
 button {
 display: inline-block;
 text-align: center;
@@ -165,7 +168,7 @@ text-decoration: none;
 white-space: nowrap;
 cursor: pointer;
 box-sizing: border-box;
-border-radius: 8px;
+border-radius: 50px;
 border: none;
 color: #fff;
 background-color: #000;

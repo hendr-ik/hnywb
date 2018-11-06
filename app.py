@@ -25,6 +25,14 @@ def index02():
 def index03():
     return render_template('03.html')
 
+@app.route("/04")
+def index04():
+    return render_template('04.html')
+
+@app.route("/05")
+def index05():
+    return render_template('05.html')
+
 #-------------------------------------------------------------
 # standard boilerplate
 if __name__ == '__main__':
