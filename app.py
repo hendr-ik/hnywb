@@ -33,6 +33,10 @@ def index04():
 def index05():
     return render_template('05.html')
 
+@app.route("/06")
+def index06():
+    return render_template('06.html')
+
 #-------------------------------------------------------------
 # standard boilerplate
 if __name__ == '__main__':
