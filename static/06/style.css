@@ -115,6 +115,9 @@ text-align: center;
 color: #fff;
 }
 
+.subline_mobile {
+display: none;
+}
 
 /* CREDITS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -344,80 +347,26 @@ font-family: arial, helvetica, Segoe UI Symbol;
 }
 
 
+/* SCROLLBAR ––––––––––––––––––––––––––––––––––––––– */
+::-webkit-scrollbar-track {
+	background-color: #f7cf76;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #fff;
+}
+
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* For devices smaller than 415px */
-@media (max-width: 415px) {
-.container {
-width: 100%;
-padding: 0;
-}
-}
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-.container {
-width: 90%;
-padding: 0;
-}
-}
-
-/* For devices smaller than 800px */
-@media (max-width: 800px) {
-
-/* BRANDING
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.branding {
-margin: 0;
-display: flex;
-flex-direction: row;
-align-items: center;
-}
-
-.sign {
-width: 45px;
-height: 45px;
-}
-
-.logo {
-margin: 0 0 0 10px;
-width: 150px;
-height: 35px;
-float: right;
-}
-
-.subline_container {
-justify-content: flex-end;
-}
-
-.subline {
-text-align: right;
-}
-
-/* CREDITS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.credits {
-display: none;
-}
-
-.credits_mobile {
-margin: 6px 5px 0 0;
-flex-direction: column;
-justify-content: flex-end;
-font-size: 13px;
-color: #fede95;
-display: block;
-}
-
-.credits_3 {
-text-align: right;
-flex-grow: 1;
-}
-
-}
-
-/* For devices larger than 800px */
+/* DESKTOP - For devices larger than 800px */
 @media (min-width: 800px) {
 .container {
 width: 80%;
@@ -433,18 +382,133 @@ margin-left: 4%;
 margin-left: 0;
 }
 
-.four.columns { width: 30.6666666667%;
+.four.columns {
+width: 30.6666666667%;
 }
 
-.eight.columns { width: 65.3333333333%;
+.eight.columns {
+width: 65.3333333333%;
 }
 
 /* Offsets */
 .offset-by-four.column,
-.offset-by-four.columns { margin-left: 34.6666666667%;
+.offset-by-four.columns {
+margin-left: 34.6666666667%;
 }
 
 .offset-by-eight.column,
-.offset-by-eight.columns { margin-left: 69.3333333333%;
+.offset-by-eight.columns {
+margin-left: 69.3333333333%;
 }
+
+}
+
+
+
+/* TABLET - For devices smaller than 800px */
+@media (max-width: 800px) {
+
+/* BRANDING
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.branding {
+margin: -34px 0 -8px 0;
+display: flex;
+flex-direction: row;
+}
+
+.sign {
+width: 45px;
+height: 45px;
+}
+
+.logo {
+margin: 0 0 0 10px;
+width: 150px;
+height: 35px;
+float: right;
+}
+
+.subline_container {
+display: none;
+}
+
+.subline_mobile {
+display: block;
+margin: 0 0 6px 4px;
+color: #fff;
+}
+
+/* CREDITS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.credits {
+display: none;
+}
+
+.credits_mobile {
+margin: 6px 0 0 0;
+flex-direction: column;
+justify-content: flex-end;
+font-size: 13px;
+line-height: 1.6;
+color: #fede95;
+display: block;
+}
+
+.credits_3 {
+text-align: right;
+flex-grow: 1;
+}
+
+}
+
+
+
+
+
+/* MOBILE - For devices smaller than 415px */
+@media (max-width: 480px) {
+.container {
+width: 100%;
+padding: 0;
+}
+
+.container_mobile {
+margin: 0 8px 0 8px;
+}
+
+body {
+font-size: 14px;
+}
+
+.branding {
+
+}
+
+.sign {
+margin: 0;
+width: 35px;
+height: 35px;
+}
+
+.logo {
+margin: 6px 0 0 6px;
+width: 120px;
+}
+
+.subline_mobile {
+margin: 8px 0 6px 4px;
+}
+
+.credits_mobile {
+font-size: 10px;
+}
+
+.t-topBar__wrapper {
+margin: 0 0 0 8px;
+}
+
+.t-inputForm__wrapper{
+margin: 0 8px 0 0;
+}
+
 }
