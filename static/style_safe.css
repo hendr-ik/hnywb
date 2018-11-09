@@ -102,6 +102,28 @@ font-weight: 400;
 text-decoration: none;
 }
 
+
+/* BUTTONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button {
+display: inline-block;
+text-align: center;
+text-decoration: none;
+white-space: nowrap;
+cursor: pointer;
+box-sizing: border-box;
+border-radius: 50px;
+border: none;
+color: #fff;
+background-color: #000;
+}
+
+button:hover,
+button:focus {
+outline: 0;
+}
+
+
 /* BRANDING
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .branding {
@@ -178,13 +200,6 @@ ul {
 padding-inline-start: 0;
 }
 
-/* Scale height of chat window > MediaQueries */
-/*
-.t-messageList__wrapper::before {
-padding-top: 120%;
-height: 600px;
-}
-*/
 
 /* Messages ––––––––––––––––––––––––––––––––––––––– */
 /* Messages general */
@@ -272,6 +287,14 @@ border-left: 0;
 }
 */
 
+/* In chat buttons */
+.t-global__button.t-global__button_postback {
+padding: 5px 10px 7px 10px;
+border-radius: 8px;
+}
+
+
+
 /* Messages emoji */
 .t-enhancedText__emoji {
 height: 15px;
@@ -329,25 +352,6 @@ border-radius: 8px;
 color: #fff;
 }
 
-/* Bottom buttons */
-button {
-display: inline-block;
-text-align: center;
-text-decoration: none;
-white-space: nowrap;
-cursor: pointer;
-box-sizing: border-box;
-border-radius: 50px;
-border: none;
-color: #fff;
-background-color: #000;
-}
-
-button:hover,
-button:focus {
-outline: 0;
-}
-
 /* Button erease */
 .t-topBar__button {
 padding: 5px 10px 7px 10px;
@@ -376,7 +380,7 @@ font-family: arial, helvetica, Segoe UI Symbol;
 }
 
 ::-webkit-scrollbar {
-	width: 6px;
+	width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -474,6 +478,10 @@ display: block;
 .credits_3 {
 text-align: right;
 flex-grow: 1;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
 }
 
 }
