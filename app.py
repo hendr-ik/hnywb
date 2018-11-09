@@ -13,6 +13,14 @@ app = Flask(__name__)
 def homepage():
     return render_template('index.html')
 
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
+@app.route("/imprint")
+def imprint():
+    return render_template('imprint.html')
+
 @app.route("/01")
 def index01():
     return render_template('01.html')
