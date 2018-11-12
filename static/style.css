@@ -47,6 +47,7 @@ box-sizing: border-box;
 /* BASE STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
+overflow-x:hidden;
 height: 100%;
 font-size: 62.5%;
 }
@@ -55,6 +56,7 @@ font-size: 62.5%;
 /* LAYOUT
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
+overflow-x:hidden;
 height: 100%;
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
@@ -236,6 +238,7 @@ right: 0;
 bottom: 0;
 left: 0;
 margin: 0;
+padding: 0;
 }
 
 .t-messageList__list:first-child {
@@ -303,12 +306,20 @@ border-left: 0;
 */
 
 /* In chat buttons */
+
+.t-messageBody__buttons,
+.t-messageBody__button {
+overflow-x:hidden;
+margin: 0;
+padding: 0;
+}
+
 .t-global__button.t-global__button_postback {
-padding: 5px 15px 7px 15px;
+padding: 7px 15px 7px 15px;
+
 border-radius: 50px;
 border: 3px solid #f4bb3e;
 }
-
 
 
 /* Messages emoji */
@@ -599,6 +610,10 @@ font-size: 10px;
 
 .t-messageList__wrapper {
 margin: 0 0 10px 0;
+}
+
+.t-messageBody__container {
+margin: 2px 20px 2px 20px;
 }
 
 .t-topBar__wrapper {

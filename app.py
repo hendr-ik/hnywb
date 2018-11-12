@@ -21,6 +21,10 @@ def about():
 def imprint():
     return render_template('imprint.html')
 
+@app.route("/privacy")
+def privacy():
+    return render_template('privacy.html')
+
 @app.route("/01")
 def index01():
     return render_template('01.html')
