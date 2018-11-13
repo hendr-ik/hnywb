@@ -109,7 +109,7 @@ color: var(--color_white);
 .credits a,
 .credits a:hover,
 .credits a:focus {
-color: var(--color_color_credits);
+color: var(--color_credits);
 font-weight: 400;
 text-decoration: none;
 }
@@ -117,7 +117,7 @@ text-decoration: none;
 .credits_mobile a,
 .credits_mobile a:hover,
 .credits_mobile a:focus {
-color: var(--color_color_credits);
+color: var(--color_credits);
 font-weight: 400;
 text-decoration: none;
 }
@@ -202,7 +202,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 font-size: 13px;
-color: var(--color_color_credits);
+color: var(--color_credits);
 }
 
 .credits_1 {
@@ -583,7 +583,7 @@ flex-direction: column;
 justify-content: flex-end;
 font-size: 13px;
 line-height: 1.6;
-color: var(--color_color_credits);
+color: var(--color_credits);
 display: block;
 }
 
