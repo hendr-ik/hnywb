@@ -84,12 +84,19 @@ background-color: var(--color_background_main);
 
 /* TYPO
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
+text-align: center;
+font-size: 30px;
+font-weight: 400;
+}
+
+h2 {
+font-size: 20px;
+font-weight: 400;
+}
+
+strong {
+font-weight: 600;
 }
 
 
@@ -292,55 +299,36 @@ background-color: var(--color_contrast);
 color: var(--color_white);
 }
 
-/* Messages image ? */
-/*
+/* Messages image */
 .t-messageBody__image {
 width: 100%;
 height: auto;
 margin: 2px 0 2px 0;
 }
-*/
-
-/* Messages bubbles corners */
-/*
-.t-messageBody__container::after {
-content: '';
-position: absolute;
-top: 0;
-width: 0;
-border: 1.2em solid transparent;
-border-top: 0;
-}
-
-.t-messageBody__container_user::after {
-right: -.6em;
-border-left-color: #000;
-border-right: 0;
-}
-
-.t-messageBody__container_bot::after {
-left: -.6em;
-border-right-color: #000;
-border-left: 0;
-}
-*/
 
 /* In chat buttons */
+.t-messageBody__buttonText {
+margin: 0 0 10px 0;
+}
 
-.t-messageBody__buttons,
-.t-messageBody__button {
-overflow-x:hidden;
+.t-messageBody__buttons {
+display: inline-flex;
+flex-wrap: wrap;
+overflow: hidden;
 margin: 0;
 padding: 0;
 }
 
-.t-global__button.t-global__button_postback {
-padding: 7px 15px 7px 15px;
-
-border-radius: 50px;
-border: 3px solid var(--color_background_main);
+.t-messageBody__button {
+margin: 0 5px 5px 0;
+flex-grow: 1;
 }
 
+/* Global buttons */
+.t-global__button.t-global__button_postback {
+padding: 7px 15px 7px 15px;
+border: 3px solid var(--color_background_main);
+}
 
 /* Messages emoji */
 .t-enhancedText__emoji {
@@ -352,7 +340,7 @@ vertical-align: -1px;
 
 
 /* Bottom ––––––––––––––––––––––––––––––––––––––– */
-.t-topBar__wrapper {
+.t-clearButton__wrapper {
 float: left;
 }
 
@@ -400,7 +388,7 @@ color: var(--color_white);
 }
 
 /* Button erease */
-.t-topBar__button {
+.t-clearButton__button {
 padding: 5px 10px 7px 10px;
 margin: 2px 0 0 0;
 background-color: var(--color_background_content);
@@ -438,13 +426,52 @@ background-color: var(--color_background_content);
 }
 
 .blocktext {
-margin: 0 20px 0 20px;
+margin: 0 30px 0 30px;
+}
+
+.text_center {
+text-align: center;
+}
+
+.text_image_credits {
+font-size: 14px;
 }
 
 .line_content {
 	border: 2px solid var(--color_background_main);
 	border-bottom: 0;
-	margin: 0 -20px 0 -20px;
+	margin: 0 -30px 0 -30px;
+}
+
+.image_content_center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image_content {
+max-width: 100%;
+height: auto;
+}
+
+.button_center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.button_content {
+padding: 6px 20px 6px 20px;
+background-color: var(--color_contrast);
+color: var(--color_white);
+border: 3px solid var(--color_white);
+}
+
+.button_content a,
+.button_content a:focus,
+.button_content a:hover{
+color: var(--color_white);
+font-weight: 400;
 }
 
 /* SPACING
@@ -596,6 +623,14 @@ flex-grow: 1;
 	width: 6px;
 }
 
+.blocktext {
+margin: 0 20px 0 20px;
+}
+
+.line_content {
+margin: 0 -20px 0 -20px;
+}
+
 }
 
 
@@ -641,7 +676,7 @@ margin: 0 0 10px 0;
 margin: 2px 20px 2px 20px;
 }
 
-.t-topBar__wrapper {
+.t-clearButton__wrapper {
 margin: 0 0 0 8px;
 }
 
@@ -649,7 +684,7 @@ margin: 0 0 0 8px;
 margin: 0 8px 0 0;
 }
 
-.t-topBar__button {
+.t-clearButton__button {
 padding: 10px 10px 8px 10px;
 margin: 2px 0 0 0;
 }
