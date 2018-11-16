@@ -269,7 +269,7 @@ padding: 0;
 }
 
 .t-messageList__list:first-child {
-padding-top: 15px;
+padding-top: 30px;
 }
 
 .t-messageList__list:last-child {
@@ -423,10 +423,11 @@ border: 3px solid var(--color_white);
 .content {
 overflow: auto;
 background-color: var(--color_background_content);
+margin: 0 0 40px 0;
 }
 
 .blocktext {
-margin: 0 30px 0 30px;
+margin: 40px 30px 0 30px;
 }
 
 .text_center {
@@ -623,8 +624,12 @@ flex-grow: 1;
 	width: 6px;
 }
 
+.content {
+margin: 0 0 20px 0;
+}
+
 .blocktext {
-margin: 0 20px 0 20px;
+margin: 20px 20px 0 20px;
 }
 
 .line_content {
