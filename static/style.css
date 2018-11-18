@@ -146,6 +146,16 @@ font-weight: 600;
 text-decoration: none;
 }
 
+/* Rasa cookie notice */
+.cookie_notice a,
+.cookie_notice a:hover,
+.cookie_notice a:focus {
+color: var(--color_background_main);
+font-weight: 600;
+text-decoration: none;
+}
+
+
 /* BUTTONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button {
@@ -313,6 +323,11 @@ color: var(--color_white);
 width: 100%;
 height: auto;
 margin: 2px 0 2px 0;
+}
+
+/* Rasa cookie notice */
+.cookie_notice {
+color: var(--color_background_main);
 }
 
 /* In chat buttons */
