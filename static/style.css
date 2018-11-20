@@ -137,16 +137,7 @@ font-weight: 600;
 text-decoration: none;
 }
 
-/* DFlow cookie notice */
-.t-messageBody__container_bot a,
-.t-messageBody__container_bot a:hover,
-.t-messageBody__container_bot a:focus {
-color: var(--color_contrast);
-font-weight: 600;
-text-decoration: none;
-}
-
-/* Rasa cookie notice */
+/* cookie notice */
 .cookie_notice a,
 .cookie_notice a:hover,
 .cookie_notice a:focus {
@@ -325,7 +316,7 @@ height: auto;
 margin: 2px 0 2px 0;
 }
 
-/* Rasa cookie notice */
+/* cookie notice */
 .cookie_notice {
 color: var(--color_background_main);
 }
@@ -720,6 +711,10 @@ margin: 2px 0 0 0;
 
 .t-global__button {
 padding: 8px 10px 4px 10px;
+}
+
+.content {
+margin: 0;
 }
 
 }
