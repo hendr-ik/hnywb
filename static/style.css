@@ -137,6 +137,14 @@ font-weight: 600;
 text-decoration: none;
 }
 
+.t-messageBody__container_bot a,
+.t-messageBody__container_bot a:hover,
+.t-messageBody__container_bot a:focus {
+color: var(--color_contrast);
+font-weight: 600;
+text-decoration: none;
+}
+
 /* cookie notice */
 .cookie_notice a,
 .cookie_notice a:hover,
@@ -147,13 +155,7 @@ text-decoration: none;
 }
 
 
-.t-messageBody__container_bot a,
-.t-messageBody__container_bot a:hover,
-.t-messageBody__container_bot a:focus {
-color: var(--color_contrast);
-font-weight: 600;
-text-decoration: none;
-}
+
 
 
 /* BUTTONS
